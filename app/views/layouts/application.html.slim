@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title
+      | Taskapp
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .app-title.navbar-expand-md.navbar-light
+      .navbar-brand Taskapp
+    .container
+    = yield
