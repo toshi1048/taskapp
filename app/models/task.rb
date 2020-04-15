@@ -5,6 +5,8 @@ class Task < ApplicationRecord
   validates :name, presence: true,length: { maximum: 30 }
   validates :validate_name_not_including_comma
 
+  belongs_to :user
+
   private
 
   #def set_nameless_name
