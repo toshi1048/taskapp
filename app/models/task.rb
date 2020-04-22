@@ -1,4 +1,5 @@
 class Task < ApplicationRecord
+  paginates_per 10
   has_one_attached :image
   def self.ransackable_attributes(auth_object = nil)
     %w[name created_at]
