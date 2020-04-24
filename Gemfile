@@ -64,3 +64,4 @@ gem 'ransack'
 gem 'kaminari'
 gem 'sidekiq'
 
+
