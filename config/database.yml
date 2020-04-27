@@ -80,7 +80,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: taskapp_production
   username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  password: fktm1048
   socket: /var/run/postgresql/.s.PGSQL.5432
