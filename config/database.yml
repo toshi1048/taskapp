@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
   database: taskapp_production
   username: taskapp
   password: <%= ENV['TASKAPP_DATABASE_PASSWORD'] %>
+  socket: /var/run/postgresql/.s.PGSQL.5432
