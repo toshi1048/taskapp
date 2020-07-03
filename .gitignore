@@ -29,3 +29,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# ファイルを残したまま、管理対象から除外。  
+ git rm --cached .env
