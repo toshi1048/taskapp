@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: taskapp_production
-  username: taskapp
+  database: achieve_production
+  username: achieve
   password: fktm1048
