@@ -50,7 +50,7 @@
 # The server-based syntax can be used to override options:
 # ------------------------------------
 server '18.176.70.4', user: 'admin', roles: %w{admin db web},
-set ssh_options: , keys: '/Users/fukutometoshiya/.ssh/id_rsa'
+set ssh_options, keys: '/Users/fukutometoshiya/.ssh/id_rsa'
 #{
 #     user: 'user_name', # overrides user setting above
 #     keys: %w(/home/user_name/.ssh/id_rsa),
