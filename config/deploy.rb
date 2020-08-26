@@ -11,7 +11,7 @@ set :branch, ENV['BRANCH'] || 'master'
 set :deploy_to, '/var/www/taskapp'
 
 ## シンボリックリンクをはるフォルダ・ファイル
-set :linked_files, %w{environment}
+set :linked_files, %w{environments}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
 
 # 保持するバージョンの個数(※後述)
