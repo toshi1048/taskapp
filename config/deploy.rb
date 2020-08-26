@@ -5,8 +5,7 @@ set :application, 'taskapp'
 set :repo_url, 'https://github.com/toshi1048/taskapp'
 
 # Default branch is :master
-set :branch,"master" 
-#ENV['BRANCH'] || 
+set :branch, ENV['BRANCH'] || 'master' 
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/taskapp'
