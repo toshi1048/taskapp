@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: achieve_production
-  username: achieve
-  password: fktm1048
+  database: taskapp_production
+  username: taskapp
+  password: <%= ENV['TASKAPP_DATABASE_PASSWORD'] %>
