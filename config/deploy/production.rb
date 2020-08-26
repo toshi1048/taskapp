@@ -50,7 +50,7 @@
 # The server-based syntax can be used to override options:
 # ------------------------------------
 server '3.113.55.16', user: 'root', roles: %w{app db web}
-set :ssh_options, keys: '/Users/fukutometoshiya/.ssh/taskapp-key.pem'
+set :ssh_options, keys: '/Users/fukutometoshiya/.ssh/id_rsa'
 #{
 #     user: 'user_name', # overrides user setting above
 #     keys: %w(/home/user_name/.ssh/id_rsa),
