@@ -28,6 +28,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'dotenv-rails' # 開発環境で環境変数を操作するのに必要
+gem 'mini_racer', platforms: :ruby # デプロイ時に必要
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'capistrano', '3.6.0' # capistranoのツール一式
