@@ -49,6 +49,7 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
+server '3.113.55.16', user: 'admin', roles: %w{web}
 server '3.113.55.16', user: 'admin', roles: %w{app db web}
 set :ssh_options, keys: '/Users/fukutometoshiya/.ssh/id_rsa'
 
