@@ -7,6 +7,7 @@ set :repo_url, 'https://github.com/toshi1048/taskapp'
 # Default branch is :master
 #set :branch, ENV['BRANCH'] || 'master' 
 
+
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/taskapp'
 
@@ -17,6 +18,7 @@ set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
 # 保持するバージョンの個数(※後述)
 set :keep_releases, 5
 
+
 # Rubyのバージョン
 set :rbenv_ruby, '2.5.1'
 set :rbenv_type, :system
@@ -26,6 +28,17 @@ set :rbenv_custom_path, '/home/admin/.rbenv/'
 set :log_level, :info
 
 namespace :deploy do
+
+  namespace :assets do
+
+    Rake::Task['deploy:assets:precompile'].clear_actions
+    
+    desc "Precompile assets"
+    task :precompile do
+      puts "-----nothing-------"
+    end
+  end
+
   desc 'Restart application'
   task :restart do
     invoke 'unicorn:restart'
