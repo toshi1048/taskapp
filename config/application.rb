@@ -18,5 +18,3 @@ module Taskapp
     # the framework and any gems in your application.
   end
 end
-
-config.assets.precompile = []
