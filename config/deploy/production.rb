@@ -51,6 +51,8 @@
 # ------------------------------------
 server '3.113.55.16', user: 'admin', roles: %w{app db web}
 set :ssh_options, keys: '/Users/fukutometoshiya/.ssh/id_rsa'
+
+set :stage, :production
 #{
 #     user: 'user_name', # overrides user setting above
 #     keys: %w(/home/user_name/.ssh/id_rsa),
