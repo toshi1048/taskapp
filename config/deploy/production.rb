@@ -53,7 +53,7 @@ server '3.113.55.16', user: 'admin', roles: %w{web}
 server '3.113.55.16', user: 'admin', roles: %w{app db}
 set :ssh_options, keys: '/Users/fukutometoshiya/.ssh/id_rsa'
 
-set :rails_env, :production
+#set :rails_env, :production
 #{
 #     user: 'user_name', # overrides user setting above
 #     keys: %w(/home/user_name/.ssh/id_rsa),
