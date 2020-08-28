@@ -33,11 +33,11 @@ namespace :deploy do
 
     Rake::Task['deploy:assets:precompile'].clear_actions
     
-    desc "Precompile assets"
-    task :precompile do
-      puts "-----nothing-------"
-    end
-  end
+    #desc "Precompile assets"
+    #task :precompile do
+      #puts "-----nothing-------"
+    #end
+  #end
 
   desc 'Restart application'
   task :restart do
