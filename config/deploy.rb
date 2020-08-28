@@ -37,7 +37,7 @@ namespace :deploy do
     #task :precompile do
       #puts "-----nothing-------"
     #end
-  #end
+  end
 
   desc 'Restart application'
   task :restart do
