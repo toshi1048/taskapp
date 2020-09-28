@@ -16,5 +16,17 @@
 
 
 ・DB設計
+ ## tasksテーブル
+ 
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false,unique: true|
+|description|text|null: false|
 
+## usersテーブル
 
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|password_digest|string|null: false|
