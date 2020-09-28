@@ -13,9 +13,6 @@
 ・DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
 　⇒できている範囲で貼り付けましょ
 
-・実装予定の内容
-
-
 
 
 ・DB設計
@@ -33,3 +30,4 @@
 |name|string|null: false|
 |email|string|null: false|
 |password_digest|string|null: false|
+
