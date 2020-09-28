@@ -77,8 +77,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: achieve_production
-  username: admin
-  password:
